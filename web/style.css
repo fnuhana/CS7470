@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f4f6f8;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+.app {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.tagline {
+  margin: 4px 0 20px;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e0e4e8;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.help {
+  margin: 8px 0 0;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.upload-status {
+  margin: 10px 0 0;
+  font-size: 0.85rem;
+  color: #2e7d32;
+}
+
+.upload-status.error {
+  color: #c62828;
+}
+
+input[type="file"] {
+  width: 100%;
+}
+
+.score-box {
+  text-align: center;
+}
+
+.score {
+  margin: 0;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #2e7d32;
+  line-height: 1.1;
+}
+
+.status {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.meta {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 4px 0 12px;
+}
+
+canvas {
+  width: 100%;
+  display: block;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}

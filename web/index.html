@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Air Supply</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Air Supply</h1>
+    <p class="tagline">Indoor ventilation from barometric pressure</p>
+
+    <section class="card">
+      <label class="label" for="csvFile">Upload Phyphox CSV</label>
+      <input id="csvFile" type="file" accept=".csv" />
+      <p class="help">Export from Phyphox: menu → Export data → Raw Data</p>
+      <p id="uploadStatus" class="upload-status" hidden></p>
+    </section>
+
+    <section class="card score-box">
+      <p class="label">Fresh Air Score</p>
+      <p class="score" id="freshAirScore">—</p>
+      <p id="ventilationStatus" class="status">Upload a CSV to begin</p>
+      <p class="meta"><span id="eventCount">0</span> events · Pressure <span id="currentPressure">—</span> hPa</p>
+      <p id="scoreBreakdown" class="help"></p>
+    </section>
+
+    <section class="card">
+      <label class="label" for="threshold">Event detection threshold: <span id="thresholdValue">0.15</span> hPa</label>
+      <input id="threshold" type="range" min="0.05" max="0.50" step="0.01" value="0.15" />
+      <canvas id="chart" height="200"></canvas>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
